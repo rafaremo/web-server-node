@@ -1,0 +1,10 @@
+<h2>Lista de Usuarios de DB</h2>
+<ul>
+  {{#each users as | user |}}
+    {{#if user.username}}
+      <li>User: {{user.username}} - {{user.email}}</li>
+    {{else}}
+      <li>User: {{user.email}}</li>
+    {{/if}}
+  {{/each}}
+</ul>
